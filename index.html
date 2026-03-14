@@ -38,16 +38,14 @@
         <div>
             <h1 class="text-2xl font-bold mb-7">Avilable Jobs</h1>
             <div class="mb-10">
-                <button onclick="switchTab('everything')" class="bg-blue-400  text-white shadow-sm py-2 px-8 rounded-md" id="all-btn">All</button>
-                <button onclick="switchTab('inter')" class="bg-white shadow-sm py-2 px-8 rounded-md" id="interview-btn">Interview </button>
-                <button onclick="switchTab('Reject')" class="bg-white shadow-sm py-2 px-8 rounded-md" id="rejected-btn">Rejected</button>
+                <button id="tab-all" onclick="switchTab('all')" class="px-5 rounded-full border-2 text-sm font-medium cursor-pointer transition-all duration-200" >All</button>
+                <button id="tab-interview" onclick="switchTab('interview')" class="px-5 rounded-full border-2 text-sm font-medium cursor-pointer transition-all duration-200" >Interview </button>
+                <button id="tab-rejected"  onclick="switchTab('rejected')"  class="px-5 rounded-full border-2 text-sm font-medium cursor-pointer transition-all duration-200" >Rejected</button>
                 
             </div>
 
         </div>
-        <section id="filter" class="hidden">
-
-        </section>
+    
 
         <section id="allcards" class="space-y-10">
             <div class="card flex justify-between bg-white shadow-sm p-5 ">
@@ -254,10 +252,10 @@
 
         </section>
 
-        <section class="" > Interview Section</section>
-        <section>Rejected Section</section>
+        <section class="hidden" > Interview Section</section>
+        <section class="hidden">Rejected Section</section>
 
-        <div id="empty-state" class="flex-col items-center justify-center py-20 gap-4 text-center">
+        <div id="empty-state" class="flex-col  hidden items-center justify-center py-20 gap-4 text-center">
             <div class="text-7xl opacity-20"></div>
             <p class="font-syne text-lg font-bold text-navy">No jobs available</p>
             <p class="text-sm text-slate-400">Check back soon for new job opportunities</p>
