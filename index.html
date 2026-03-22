@@ -36,12 +36,17 @@
 
     </section>
     <hr class="w-[80%] mx-auto mt-[50px] text-gray-200">
+    <div class="w-[80%] mx-auto mt-[50px] flex justify-between items-center">
+        <h1 class="text-2xl font-bold mb-7">Avilable Jobs</h1>
+        <span class=""><span id="avilable">8</span> jobs</span>
+
+    </div>
 
 
 
     <section class="w-[80%] mx-auto mt-[50px]">
         <div>
-            <h1 class="text-2xl font-bold mb-7">Avilable Jobs</h1>
+            
             <div class="mb-10">
                 <button id="tab-all" onclick="switchTab('all')"
                     class="px-5 rounded-full border-2 text-sm font-medium cursor-pointer transition-all duration-200">All</button>
@@ -56,119 +61,46 @@
         </div>
 
 
-        <main id="jobs-Container" class="flex flex-col gap-4 ">
-            <section id="all-container" class="hidden">
+        <main id="jobs-Container" class="">
+            <section id="all-container" class="hidden flex flex-col gap-6">
                 <div class="card bg-white rounded-2xl border-2 border-slate-100 px-5 py-6 hover:shadow-lg">
                     <div class="flex justify-between items-start gap-4">
                         <div class="flex-1 min-w-0">
                             <p class="font-syne font-bold text-nevy text-base mb-0.5">Mobile First Corp</p>
                             <p>React Native Developer</p>
-                            <p class="text-xs text-slate-300">
+                            <p class="text-xs text-slate-500        my-4">
                                 <span>Remote</span>
                                 <span class="mx-1.5 text-slate-300">.</span>
                                 <span>Full-time</span>
-                                <span class="mx-1.5 text-slate-300">.</span>
+                                <span class="mx-1.5 text-slate-300 ">.</span>
                                 <span>$130,000 - $175,000</span>
                             </p>
-                            <div class="mb-3 inline-block ">
-                                NotApplied
+                            <div class="mb-3 inline-block status border bg-gray-200 border-none p-2 rounded-md ">
+                                Not Applied
 
                             </div>
-                            <p>Build cross-platform mobile applications using React Native. Work on products used by
+                            <p class="mb-3">Build cross-platform mobile applications using React Native. Work on products used by
                                 millions of users worldwide.</p>
                             <div class="flex flex-wrap gap-2">
                                 <button
-                                    class="text-xs font-semibold px-1.5 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white">Interview</button>
+                                    class="text-xs font-semibold px-1.5 py-1.5 border-2 text-green-400 border-green-300 text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white interview">Interview</button>
                                 <button
-                                    class="text-xs font-semibold px-1.5 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white">Rejected</button>
+                                    class="text-xs font-semibold px-1.5 py-1.5 border-2 border-red-200 text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white rejected text-red-300">Rejected</button>
 
                             </div>
 
 
                         </div>
                         <button
-                            class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full">
-                            <i class="fa-regular fa-trash-can text-black"></i>
+                            class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full delete">
+                            <i class="fa-regular fa-trash-can text-black pointer-events-none"></i>
 
                         </button>
 
                     </div>
 
                 </div>
-                <div class="card bg-white rounded-2xl border-2 border-slate-100 px-5 py-6 hover:shadow-lg">
-                    <div class="flex justify-between items-start gap-4">
-                        <div class="flex-1 min-w-0">
-                            <p class="font-syne font-bold text-nevy text-base mb-0.5">Webflow Technology</p>
-                            <p>Web developer</p>
-                            <p class="text-xs text-slate-300">
-                                <span>Remote</span>
-                                <span class="mx-1.5 text-slate-300">.</span>
-                                <span>Full-time</span>
-                                <span class="mx-1.5 text-slate-300">.</span>
-                                <span>$130,000 - $175,000</span>
-                            </p>
-                            <div class="mb-3 inline-block ">
-                                NotApplied
-
-                            </div>
-                            <p>Build cross-platform mobile applications using React Native. Work on products used by
-                                millions of users worldwide.</p>
-                            <div class="flex flex-wrap gap-2">
-                                <button
-                                    class="text-xs font-semibold px-1.5 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white">Interview</button>
-                                <button
-                                    class="text-xs font-semibold px-1.5 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white">Rejected</button>
-
-                            </div>
-
-
-                        </div>
-                        <button
-                            class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full">
-                            <i class="fa-regular fa-trash-can text-black"></i>
-
-                        </button>
-
-                    </div>
-
-                </div>
-                <div class="card bg-white rounded-2xl border-2 border-slate-100 px-5 py-6 hover:shadow-lg">
-                    <div class="flex justify-between items-start gap-4">
-                        <div class="flex-1 min-w-0">
-                            <p class="font-syne font-bold text-nevy text-base mb-0.5">Webflow Technology</p>
-                            <p>Web developer</p>
-                            <p class="text-xs text-slate-300">
-                                <span>Remote</span>
-                                <span class="mx-1.5 text-slate-300">.</span>
-                                <span>Full-time</span>
-                                <span class="mx-1.5 text-slate-300">.</span>
-                                <span>$130,000 - $175,000</span>
-                            </p>
-                            <div class="mb-3 inline-block ">
-                                NotApplied
-
-                            </div>
-                            <p>Build cross-platform mobile applications using React Native. Work on products used by
-                                millions of users worldwide.</p>
-                            <div class="flex flex-wrap gap-2">
-                                <button
-                                    class="text-xs font-semibold px-1.5 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white">Interview</button>
-                                <button
-                                    class="text-xs font-semibold px-1.5 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white">Rejected</button>
-
-                            </div>
-
-
-                        </div>
-                        <button
-                            class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full">
-                            <i class="fa-regular fa-trash-can text-black"></i>
-
-                        </button>
-
-                    </div>
-
-                </div>
+               
             </section>
             <section class="hidden" id="interview-container">Interview Section</section>
             <section class="hidden" id="rejected-container">Rejected Section</section>
@@ -183,7 +115,7 @@
 
 
             <!-- Available Jobs Section-->
-            <section id="empty-slate" class=" hidden space-y-6 w-full">
+            <section id="empty-state" class="hidden space-y-6 w-full">
                 <div class="rounded-2 bg-white border border-[#f1f2f4FF] py-28 w-full">
 
                     <img src="./jobs.png" alt="" class="mx-auto">
